@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    	<title>21 GAME</title>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" href="estilos.css">
+  	</head>
+
+  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  	<body>
+  		<div class="container">
+      		<div class="row">
+      			<div class="col-sm-12 col-md-6 dealerZone" id="dealerZone">
+      				
+      			</div>
+      			<div class="col-sm-12 col-md-6 deckZone" ondragstart="arrastrando(event);">
+      				<img src="Deck/0.png" id="deck"/>
+      			</div>
+      			<div class="col-md-12 playerZone" id="playerZone" ondrop="soltar2(event);" ondragover="sobre(event);">
+      			</div>
+      			<button type="button" onclick="stop()" class="col-md-12 btn btn-warning">Parar</button>
+      			<button type="button" onclick="reinicio()" class="col-md-12 btn btn-warning">Repartir de nuevo</button>
+      		</div>
+      	</div>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  		<script src="funtions.js"></script>
+  	</body>
+</html>
